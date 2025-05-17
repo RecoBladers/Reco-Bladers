@@ -1,0 +1,112 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #181818; /* Deep Black */
+  color: #FFFFFF; /* White for text */
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Header */
+header {
+  background-color: #0D3580; /* Deep Blue */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #D2292D; /* Soviet Red */
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: #FFFFFF;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #D2292D; /* Highlight with Soviet Red */
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #D2292D;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.btn {
+  background-color: #D2292D; /* Soviet Red */
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.btn:hover {
+  background-color: #0D3580; /* Deep Blue */
+  color: #FFFFFF;
+}
+
+/* Footer */
+footer {
+  background-color: #0D3580; /* Deep Blue */
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
