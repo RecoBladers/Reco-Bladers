@@ -1,0 +1,86 @@
+/* Extra Typography */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+  font-family: 'Anton', 'Arial', sans-serif;
+}
+
+/* Animated headings */
+h2 {
+  position: relative;
+  overflow: hidden;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #D2292D;
+  bottom: 0;
+  left: -100%;
+  animation: slideIn 1.5s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    left: 0;
+  }
+}
+
+/* Button shadows and transform */
+.btn {
+  box-shadow: 0 4px 6px rgba(210, 41, 45, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(13, 53, 128, 0.9);
+}
+
+/* Card-style sections */
+section {
+  background: #111;
+  border-left: 5px solid #D2292D;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(210, 41, 45, 0.3);
+}
+
+/* Link underline effect */
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #D2292D;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Footer tweaks */
+footer {
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 15px 10px;
+  }
+}
